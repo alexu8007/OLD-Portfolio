@@ -73,7 +73,7 @@ html, body {
     width: 100vw;
     top: 0;
     position: fixed;
-    z-index: 100;
+    z-index: 1;
     background-color: #EDBFFF;
     opacity: 0;
     display: none;
@@ -86,7 +86,7 @@ html, body {
     border-radius: 50%;
     position: fixed;
     background-color: #EDBFFF;
-    z-index: 8;
+    z-index: 8000;
     transition: background-image ease 0.5s;
     background-position: center;
     background-size:cover ;
@@ -95,6 +95,9 @@ html, body {
 .main{
     background-color: #0F0D0D;
     cursor: none;
+}
+.nav{
+  cursor: none;
 }
 
 .page1{
@@ -105,6 +108,9 @@ html, body {
     padding-top: 12vw;
 }
 
+.nocruse{
+    cursor: none;
+}
 
 #nav{
     height: 55px;
@@ -272,7 +278,7 @@ html, body {
 .page3-part1 .media-container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Aligns items to the left */
+ /* Aligns items to the left */
 }
 
 .page3-part1 .media-heading {
@@ -287,6 +293,9 @@ html, body {
   margin-top: 10px; /* Adjust as needed */
 }
 
+.rightmargin{
+    margin-right: 0px;
+}
 
 .marginrightapp{
     margin-right: 120px;
@@ -681,13 +690,15 @@ footer{
 .texthover:hover{
     color: #EDBFFF;
     transform: scale(0.5);
-    transition: ease-in-out 2s;
+    transition: ease-in 2s;
 }
 
 img:hover{
     transform: scale(1.02);
     transition: all ease-out 0.5s;
 }
+
+
 
 @keyframes flyInFromLeft {
   0% {
@@ -709,4 +720,13 @@ img:hover{
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+.scalee{
+  max-width: 386px;
+  max-height: 386px;
+}
+
+.sc09{
+  scale: 0.9;
 }

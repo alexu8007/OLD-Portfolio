@@ -10,7 +10,7 @@ function init() {
     ScrollTrigger.scrollerProxy(".main", {
         scrollTop(value) {
             return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
-        }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+        }, 
         getBoundingClientRect() {
             return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
         },
@@ -28,6 +28,7 @@ init()
 
 var crsr = document.querySelector(".cursor");
 var main = document.querySelector(".main");
+var nav = document.querySelector(".nav");
 var images = document.querySelectorAll(".page3 .imgg");
 document.addEventListener("mousemove",function(dets){
     crsr.style.left = dets.x + 0+"px";
@@ -102,6 +103,49 @@ tl3.to(".main",{
     backgroundColor:"#0F0D0D"
 })
 
+var nav3 = document.querySelector(".nav3")
+var nav33 = document.querySelector(".nav33")
+nav33.onclick = function(){
+    nav3.textContent = "Scroll"
+}
+
+var nav4 = document.querySelector(".nav4")
+var nav44 = document.querySelector(".nav44")
+nav44.onclick = function(){
+    nav4.textContent = "Scroll"
+}
+
+var nav5 = document.querySelector(".nav5")
+var nav55 = document.querySelector(".nav55")
+nav55.onclick = function(){
+    nav5.textContent = "Scroll"
+}
+
+var nav6 = document.querySelector(".nav6")
+var nav66 = document.querySelector(".nav66")
+nav66.onclick = function(){
+    nav6.textContent = "Scroll"
+}
+
+var zeld = document.querySelector(".zeldac")
+zeld.onclick = function(){
+    window.open("https://github.com/alexu8007/PythonGame", "_blank");
+}
+
+var betapt = document.querySelector(".betapt")
+betapt.onclick = function(){
+    window.open("https://alexu8007.github.io/BetaPillThoughtWebsite/", "_blank");
+}
+
+var pt = document.querySelector(".pt")
+pt.onclick = function(){
+    window.open("https://pillthought.com", "_blank");
+}
+
+var ptm = document.querySelector(".ptm")
+ptm.onclick = function(){
+    window.open("https://www.linkedin.com/in/alexungureanuu/", "_blank");
+}
 
 var boxes = document.querySelectorAll(".boxx")
 boxes.forEach(function(elem){
@@ -121,18 +165,7 @@ boxes.forEach(function(elem){
     })
 })
 
-var h4 = document.querySelectorAll("#nav h4")
-var purple = document.querySelector("#purple")
-h4.forEach(function(elem){
-    elem.addEventListener("mouseenter",function(){
-        purple.style.display = "block"   
-        purple.style.opacity = "1"
-    })
-    elem.addEventListener("mouseleave",function(){
-        purple.style.display = "none"   
-        purple.style.opacity = "0"
-    })
-})
+
 
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
